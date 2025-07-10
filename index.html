@@ -650,11 +650,11 @@
         <div class="dashboard-square">
             <div class="dashboard-title">MAIN DASHBOARD</div>
             <div class="dashboard-content">
-                <a href="generator.html" class="dashboard-button">
+                <div class="dashboard-button" onclick="navigateToGenerator()">
                     <div class="button-icon">👑</div>
                     <div class="button-title">GENERATOR</div>
                     <div class="button-subtitle">Advanced Generation Tools</div>
-                </a>
+                </div>
                 
                 <div class="dashboard-button" onclick="alert('AutoHar tool activated!')">
                     <div class="button-icon">🔨</div>
@@ -676,6 +676,12 @@
 </div>
 
 <script>
+    // Navigation function to go to /generator
+    function navigateToGenerator() {
+        // Change URL to /generator
+        window.location.href = '/generator';
+    }
+
     // Matrix Code Animation
     function createMatrixRain() {
         const matrixBg = document.getElementById('matrixBg');
